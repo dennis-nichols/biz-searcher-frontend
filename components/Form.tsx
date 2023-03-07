@@ -95,15 +95,9 @@ export default function Form({ backendBaseUrl }: Props) {
         placeholder="Business Type"
         className="w-2/4 px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md"
       />
-      <div className="flex justify-between">
-        <FormButton loading={loading} />
-        <button className="px-4 py-2 mt-4 ml-2 text-white bg-pink-500 rounded-md hover:bg-pink-700">
-          <a href="https://www.reddit.com/r/girlsinyogapants/" target='_blank'>
-            I'm Feeling Lucky
-          </a>
-        </button>
-      </div>
-
+  
+      <FormButton loading={loading} />
+  
       {!loading && csvLink && (
         <a
           href={csvLink}

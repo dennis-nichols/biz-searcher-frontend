@@ -53,7 +53,6 @@ export default function Form({ backendBaseUrl }: Props) {
         const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
         link.setAttribute("download", "search-results.csv");
-        link.click();
 
         setCsvLink(encodedUri);
         setError(null);

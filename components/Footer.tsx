@@ -9,7 +9,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Built by Dennis
+        Built by Dennis Nichols, 2023
       </a>
     </footer>
   );

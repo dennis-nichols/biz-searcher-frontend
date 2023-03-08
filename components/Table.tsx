@@ -45,7 +45,7 @@ export const Table: React.FC<Props> = ({ bizData }) => {
 
   return (
     <div className="m-2">
-      <table className="p-2 mb-6 border table-auto md:w-full text-slate-400 border-slate-500 sm:w-2/4">
+      <table className="p-2 mb-6 border table-auto md:w-full text-slate-300 border-slate-500 sm:w-2/4">
         <thead className="p-2 text-green-500 border-b border-slate-500">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr className="p-2" key={headerGroup.id}>
@@ -90,8 +90,8 @@ export const Table: React.FC<Props> = ({ bizData }) => {
                 <td
                   className={
                     typeof cell.getValue() === "string"
-                      ? "p-2 text-left underline md:text-base text-sm"
-                      : "p-2 text-center sm:w-1/3 md:text-base text-sm"
+                      ? "p-2 text-left md:text-base text-sm"
+                      : "p-2 text-center sm:w-1/3 md:text-base text-slate-400 text-sm"
                   }
                   key={cell.id}
                 >

@@ -68,12 +68,14 @@ export const Table: React.FC<Props> = ({ bizData }) => {
                       }
                       onClick={header.column.getToggleSortingHandler()}
                     >
+                      <>
                       {header.column.columnDef.header}
                       {header.column.getIsSorted() === "asc"
                         ? " 🔼"
                         : header.column.getIsSorted() === "desc"
                         ? " 🔽"
                         : null}
+                        </>
                     </div>
                   )}
                 </th>

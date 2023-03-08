@@ -57,37 +57,37 @@ export default function Form({ backendBaseUrl }: Props) {
   console.log(bizData.length > 0 ? bizData : "No data yet");
   return (
     <>
-    <form
-      className="flex flex-col items-center justify-center max-w-4xl mt-6 sm:w-full"
-      onSubmit={handleSubmit}
-    >
-      <input
-        type="text"
-        name="city"
-        placeholder="City"
-        className="w-2/4 px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md"
-      />
+      <form
+        className="flex flex-col items-center justify-center max-w-4xl mt-6 sm:w-full"
+        onSubmit={handleSubmit}
+      >
+        <input
+          type="text"
+          name="city"
+          placeholder="City"
+          className="px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md md:w-2/4 sm:w-full"
+        />
 
-      <input
-        type="text"
-        name="businessType"
-        placeholder="Business Type"
-        className="w-2/4 px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md"
-      />
+        <input
+          type="text"
+          name="businessType"
+          placeholder="Business Type"
+          className="px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md md:w-2/4 sm:w-full"
+        />
 
-      <input
-        type="number"
-        name="minRatings"
-        placeholder="Minimum Number of Ratings"
-        className="w-2/4 px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md"
-      />
+        <input
+          type="number"
+          name="minRatings"
+          placeholder="Minimum Number of Ratings"
+          className="px-4 py-2 mt-4 text-black bg-gray-500 border-gray-700 rounded-md md:w-2/4 sm:w-full"
+        />
 
-      <FormButton loading={loading} />
+        <FormButton loading={loading} />
 
-      {error && <p className="mt-4 text-red-600">{error}</p>}
-     
-    </form>
-    {bizData.length > 0 && <Table bizData={bizData} />}
+        {error && <p className="mt-4 text-red-600">{error}</p>}
+      </form>
+      {bizData.length > 0 && <p className="mt-4 text-gray-400">Click headers to sort columns</p>}
+      {bizData.length > 0 && <Table bizData={bizData} />}
     </>
   );
 }

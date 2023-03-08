@@ -103,17 +103,17 @@ export const Table: React.FC<Props> = ({ bizData }) => {
                         e.preventDefault();
                         // Copy the cell content to the clipboard
                         navigator.clipboard
-                          .writeText(cell.getValue())
+                          .writeText(cell.getValue() as string)
                           .then(() => {
                             // Open the link in a new page
                             window.open("https://" + cell.getValue(), "_blank");
                           });
                       }}
                     >
-                      {cell.getValue()}
+                      {cell.getValue() as string}
                     </a>
                   ) : (
-                    <span>{cell.getValue()}</span>
+                    <span>{cell.getValue() as number}</span>
                   )}
                 </td>
               ))}

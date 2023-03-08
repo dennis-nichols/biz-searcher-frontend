@@ -6,10 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.7.9",
+    "clipboard": "^2.0.11",
     "json2csv": "^6.0.0-alpha.2",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-table": "^7.8.0"
   },
   "devDependencies": {
     "@types/json2csv": "^5.0.3",

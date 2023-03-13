@@ -9,7 +9,10 @@ const Home: NextPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-800">
       <Head>
         <title>Ivan's Biz Searcher</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/dennis-nichols/biz-searcher-frontend/main/public/favicon.ico"
+        />
       </Head>
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
         <Welcome />

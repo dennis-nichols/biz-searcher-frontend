@@ -33,7 +33,10 @@ export default function FormButton({loading}:Props) {
           Loading...
         </button>
       ) : (
-        <button
+
+
+<div className="relative flex items-center justify-center group w-7">
+ <button
           type="submit"
           className={`px-4 py-2 mt-4 text-white bg-green-600 rounded-md hover:bg-green-700 ${
             loading ? "opacity-50 cursor-not-allowed" : ""
@@ -42,6 +45,11 @@ export default function FormButton({loading}:Props) {
         >
           Search
         </button>
+          <span className="absolute font-mono text-sm text-green-500 transition-opacity opacity-0 pointer-events-none top-4 left-16 w-max group-hover:opacity-100">
+            Takes 6-7 secs due to<br/>
+            Google API restrictions
+          </span>
+        </div>
       )}
     </>
   );

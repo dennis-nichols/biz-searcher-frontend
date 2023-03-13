@@ -1,27 +1,34 @@
-# Next.js + Tailwind CSS Example
+# Business Search Tool
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+A tool to search and filter businesses in a specific area of the US, using the Google Place Search and Place Details APIs. This tool was built to help the client, [Radman Company](https://www.radmancompany.net/), with acquisition research adn deal sourcing for private equity firms.
 
-## Deploy your own
+## Frontend
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The UI is built with [Next.js](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/), and [React Table](https://react-table-v7.tanstack.com/). The frontend application is hosted on [Vercel](https://vercel.com/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Backend
 
-## How to use
+The backend is built with [Python](https://www.python.org/) and the [FastAPI](https://fastapi.tiangolo.com/) framework. It is hosted on [Google Cloud Run](https://cloud.google.com/run). See the backend repo [here](https://github.com/dennis-nichols/radman_business_searcher).
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Features
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+- Search businesses in a specific area of the US
+- Filter businesses by the total number of reviews
+- Responsive and mobile friendly UI
+- Quick evaluation of candidate businesses for acquisition research
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Getting started
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+1. Clone the repository: `git clone https://github.com/<your-username>/business-search-tool.git`
+2. Navigate to the project directory: `cd business-search-tool`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Access the application at `http://localhost:3000`
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Deployment
+
+The frontend is hosted on Vercel and the backend is hosted on Google Cloud Run. Follow the documentation for each platform to deploy the application.
+
+## Contributing
+
+This project is open for contributions. Feel free to open an issue or submit a pull request.

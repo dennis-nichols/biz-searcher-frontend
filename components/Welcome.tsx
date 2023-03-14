@@ -4,8 +4,7 @@ export default function Welcome() {
   return (
     <>
       <h1 className="text-6xl font-bold text-slate-300">
-        Welcome to{" "}
-        <span className="text-green-700">Ivan's</span> Business Searcher
+        <span className="text-green-700">Radman Company</span> Business Searcher
       </h1>
 
       <h2 className="mt-3 text-2xl text-gray-400">

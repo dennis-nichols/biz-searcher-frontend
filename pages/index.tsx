@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-800">
       <Head>
-        <title>Ivan's Biz Searcher</title>
+        <title>Radman Co. Business Searcher</title>
         <link
           rel="icon"
           href="https://raw.githubusercontent.com/dennis-nichols/biz-searcher-frontend/main/public/favicon.ico"

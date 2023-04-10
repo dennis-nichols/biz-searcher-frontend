@@ -7,7 +7,7 @@ export default function Welcome() {
         <span className="text-green-700">Radman Company</span> Business Searcher
       </h1>
 
-      <h2 className="mt-3 text-2xl text-gray-400">
+      <h2 className="mt-6 text-2xl text-gray-400">
         Get started by searching for a city and type of business
       </h2>
     </>
